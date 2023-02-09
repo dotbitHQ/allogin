@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js'
 import { classMap } from 'lit/directives/class-map.js'
 // import styles from './index.css'
 import { $t } from '../../utils'
-import { registerTranslateConfig, use, get, translate } from 'lit-translate'
+import { use, get, translate } from 'lit-translate'
 
 @customElement('allogin-button')
 export class AlloginButton extends LitElement {
@@ -23,7 +23,6 @@ export class AlloginButton extends LitElement {
 
   async onClick (): Promise<void> {
     await use(Math.random() > 0.5 ? 'zh-CN' : 'en-US')
-    // console.log('get', t(''))
   }
 
   // -- render ------------------------------------------------------- //
@@ -33,17 +32,11 @@ export class AlloginButton extends LitElement {
       'w3m-icon-right': this.iconRight !== undefined
     }
 
-    console.log('translate', translate('What a b_190'))
-
     return html`
       <button class=${classMap(classes)} ?disabled=${this.disabled} @click=${this.onClick}>
         ${this.iconLeft}
           <slot></slot>
-          ${translate('What a b_190')}
-          ${translate('What_a_b_190')}
-          ${translate('😊')}
-          <!-- ${translate($t('What a beautiful girl'))} -->
-          <!-- ${translate('What a b_190')} -->
+          ${translate($t('What an ugly boy'))}
         ${this.iconRight}
       </button>
     `

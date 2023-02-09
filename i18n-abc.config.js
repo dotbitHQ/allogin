@@ -1,3 +1,11 @@
+const { makeCrcKey } = require('i18n-abc/lib/shared')
+
+function $t (text) {
+  const rawKey = makeCrcKey(text)
+  // To resolve i18n key bug in lit-translate
+  return rawKey.replace(/[^a-zA-Z0-9]/g, '_')
+}
+
 module.exports = {
   scan: {
     input: [
@@ -6,6 +14,7 @@ module.exports = {
     ],
     output: './src/locales/raw',
     langs: ['en-US', 'zh-CN'],
+    generateKey: $t
   },
   clean: {
     input: './src/locales/raw',
