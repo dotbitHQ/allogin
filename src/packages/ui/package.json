@@ -1,0 +1,19 @@
+{
+  "name": "@allogin/ui",
+  "version": "0.1.0",
+  "description": "all about ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mozwell",
+  "license": "MIT",
+  "dependencies": {
+    "@allogin/core": "workspace:*",
+    "i18n-abc": "^0.5.0",
+    "lit": "^2.6.1",
+    "lit-translate": "^2.0.1",
+    "valtio": "^1.10.1"
+  }
+}
