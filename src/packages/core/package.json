@@ -1,0 +1,12 @@
+{
+  "name": "@allogin/core",
+  "version": "0.1.0",
+  "description": "all about core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mozwell",
+  "license": "MIT"
+}

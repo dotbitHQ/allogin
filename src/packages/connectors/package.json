@@ -1,0 +1,16 @@
+{
+  "name": "@allogin/connectors",
+  "version": "0.1.0",
+  "description": "all about connectors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mozwell",
+  "license": "MIT",
+  "dependencies": {
+    "@allogin/chains": "workspace:^0.1.0",
+    "ethers": "5.4"
+  }
+}
